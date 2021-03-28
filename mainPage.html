@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>My Website</h1>
+  <p>A website created by me.</p>
+</div>
+
+<div class="navbar">
+  <a href="#">News</a>
+  <a href="#">Discussion</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>About Get Tech</h2>
+    <h5>Get tech is a Technologoy news and discussion forum created to keep you up to 
+	date on all things Software or Hardware</h5>
+	<h5></h5>
+	<h5>This Site is divided up into two main categories...</h5>
+	<h5 style="color:red">Red for Hardware</h5>
+	<h5 style="color:blue">Blue for software</h5>
+	<h5 style=" color:green">Green is for mobile tech</h5>
+	<h5>Get started now by signing up for an account now so you can share and discuss anything tech related</h5>
+	<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<body>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+	<h5></h5>
+	<h5>This website was created by SB4</h5>
+  </div>
+  <div class="main">
+    <h2 style="color:red">Intel will make others' chips in major turnaround effort under new CEO</h2>
+    <h5>24/03/21</h5>
+   <!-- <div class="fakeimg" style="height:200px;">Image</div>-->
+	<img src= "intel.jpg" alt="Slack logo"style="height:400px; width:100%;">
+    <p>CEO Pat Gelsinger offers a more confident assessment after the chipmaker struggled for years to sustain processor progress.</p>
+    <p>After years of struggling to keep up with competitors, Intel will adopt their core strategy by making other 
+	companies' chips for them, new Chief Executive Pat Gelsinger said Tuesday. Intel largely has focused on making 
+	its own chips, but that'll change with the new and independent Intel Foundry Services business unit.
+
+	If the shift works, it'll mark a major turnaround for a decades-old Silicon Valley powerhouse. For years, technology 
+	leadership and the "Intel Inside" marketing campaign kept the chipmaker at the forefront of personal technology. But 
+	in recent years, Intel failed to tap into the mobile market and has suffered several delays to PC processor progress.
+	</p>
+    <br>
+    <h2 style="color:blue">Slack adds ability to direct message people outside your company</h2>
+    <h5>24/03/21</h5>
+   <!-- <div class="fakeimg" style="height:200px;">Image</div>-->
+   <img src= "slackImg.jpg" alt="Slack logo"style="height:400px; width:100%;">
+    <p>Slack, which offers instant-messaging within companies, now lets you exchanges messages with people outside your
+	company. Slack Connect DMs, announced in October, are designed to work with partner companies or clients.
+
+	Paid users will be able to use the new feature starting Wednesday, and you'll need an email address for the person 
+	you're connecting with. To send a Connect DM, you create a new message and should see a "DM outside your company" 
+	option in the top right of the screen. Once you click that, you can enter the person's email address. </p>
+    <p>"Once your partner accepts the emailed invitation, they'll automatically appear in your list of direct message
+	recipients and you'll be able to message them in Slack," the company said. "This includes any current user of Slack, 
+	even those on the free plan."
+
+	Slack is also planning to expand this feature so that several companies will be able to link together to create a 
+	private business network with unified directories, channel discovery and other features.</p>
+
+	<br>
+	<h5>24/03/21</h5>
+	<h2 style= "color:green">One Plus launch their new flagship phones and they might just be the best on the market now</h2>
+<!---	<div class="one plus 9"  style="height:200px;">Image</div> -->
+	<img src="oneplus9.jpg" alt= " One plus 9" style="height:400px; width:100%;">
+	<p>One Plus has always been one of the top options for people looking for the top of the line android flagship with all the best specs 
+	like loads of ram the fasted mobile processor and the best camera but that last category has been what usually holds one plus back but not this year</p>
+	<p>This year one plus has teamed up with Hasselblad the company that made the original cameras for the appolo mission that made it to the moon and they have been making 
+	cameras ever since so they know how to make a good camera lens the reviews of the new one plus are as we expected and the new camera is one of the best on the android 
+	market and even trades blows with apples camera on the iphone 12</p>
+  </div>
+</div>
+
+</body>
+</html>
